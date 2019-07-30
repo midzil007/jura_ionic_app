@@ -1,0 +1,60 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      Doprava a platba
+    </ion-title>
+
+    <ion-buttons>
+      <button ion-button clear large navPop>
+        <ion-icon name="arrow-round-back"></ion-icon> Zpět
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+<ion-card>
+  <ion-card-header>
+  <strong>Doprava</strong>
+  </ion-card-header>
+     <ion-card-content>
+<ion-list radio-group [(ngModel)]="delivery">
+
+  <div class="radio-item" *ngFor="let item of deliverylist" >
+    <p>{{item.name}} - {{item.price}} Kč<br>
+      <span>{{item.descr}}</span>  
+    </p> 
+    <ion-radio  value="{{item.id}}"></ion-radio>  
+    
+  </div> 
+
+</ion-list>
+   </ion-card-content>
+</ion-card>
+<ion-card>
+  <ion-card-header>
+  <strong>Platba</strong>
+  </ion-card-header>
+   <ion-card-content>
+<ion-list radio-group [(ngModel)]="payment">
+
+  <div class="radio-item" *ngFor="let item of paymentlist" >
+    <p>{{item.name}} - {{item.price}} Kč<br>
+      <span>{{item.descr}}</span>  
+    </p> 
+    <ion-radio  value="{{item.id}}"></ion-radio>  
+    
+  </div> 
+
+</ion-list>
+ <button ion-button full (click)="saveOptions()">ULOŽIT</button>
+  </ion-card-content>
+</ion-card> 
+
+</ion-content>
+ 

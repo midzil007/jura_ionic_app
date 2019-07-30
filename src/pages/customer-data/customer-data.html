@@ -1,0 +1,92 @@
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button icon-only menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>
+      Mé údaje
+    </ion-title>
+
+    <ion-buttons>
+      <button ion-button clear large navPop>
+        <ion-icon name="arrow-round-back"></ion-icon> Zpět
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+<ion-card>  
+<ion-card-content>
+<form [formGroup]="formValidatorUser">
+<ion-list>
+  <ion-item> 
+    <ion-label floating>Jméno a příjmení* </ion-label>    
+    <ion-input formControlName="fu_jmeno" [(ngModel)]="lastData.fu_jmeno" type="text" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Email*</ion-label>
+    <ion-input  formControlName="email" type="text" [(ngModel)]="lastData.email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Telefonní číslo*</ion-label>
+    <ion-input formControlName="fu_phone" type="text" [(ngModel)]="lastData.fu_phone"></ion-input>
+  </ion-item> 
+  <ion-item>
+    <ion-label floating>Ulice a číslo popisné*</ion-label>
+    <ion-input formControlName="fu_ulice" type="text" [(ngModel)]="lastData.fu_ulice"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Město*</ion-label>
+    <ion-input formControlName="fu_mesto" type="text" [(ngModel)]="lastData.fu_mesto"></ion-input>
+  </ion-item>
+    <ion-item>
+    <ion-label floating>PSČ</ion-label>
+    <ion-input formControlName="fu_psc"  type="text" [(ngModel)]="lastData.fu_psc"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>Firma</ion-label>
+    <ion-input formControlName="fu_firma" type="text" [(ngModel)]="lastData.fu_firma"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>IČO</ion-label>
+    <ion-input formControlName="fu_ico" type="text" [(ngModel)]="lastData.fu_ico"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>DIČ</ion-label>
+    <ion-input formControlName="fu_dic" type="text" [(ngModel)]="lastData.fu_dic"></ion-input>
+  </ion-item>
+   <ion-item>
+    <ion-label floating>Jméno a příjmeni</ion-label>
+    <ion-input formControlName="fir_sur" type="text"></ion-input>
+  </ion-item> 
+  <ion-item>
+    <ion-label floating>Firma</ion-label>
+    <ion-input formControlName="firma" type="text" [(ngModel)]="lastData.firma"></ion-input>
+  </ion-item> 
+  <ion-item>
+    <ion-label floating>Telefonní číslo</ion-label>
+    <ion-input formControlName="phone" type="text" [(ngModel)]="lastData.phone"></ion-input>
+  </ion-item> 
+  <ion-item>
+    <ion-label floating>Ulice a číslo popisné</ion-label>
+    <ion-input formControlName="ulice" type="text" [(ngModel)]="lastData.ulice"></ion-input>
+  </ion-item> 
+  <ion-item>
+    <ion-label floating>Město</ion-label>
+    <ion-input formControlName="mesto" type="text" [(ngModel)]="lastData.mesto"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label floating>PSČ</ion-label>
+    <ion-input formControlName="psc"  type="text" [(ngModel)]="lastData.psc"></ion-input>
+  </ion-item>
+  
+</ion-list>
+ <button ion-button full (click)="saveCustomer()">ULOŽIT</button> 
+</form  >
+ </ion-card-content>
+</ion-card>
+</ion-content>

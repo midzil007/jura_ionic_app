@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Mé kávovary</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>  
+<ion-grid>
+  <ion-list *ngFor="let row of listProducts">
+    <ion-item class="item-basket" *ngFor="let item of row">
+      <ion-card *ngIf="item" class="card-md full basket-card">
+        <ion-avatar slot="start" class="ios my-avatar hydrated">
+        <img src="{{item.image}}"> 
+        </ion-avatar>   
+        <ion-card-content class="basket-car-c">     
+         <h4>{{item.title}}</h4>  
+          <p float-left text-right margin-top>{{item.price}} Kč</p> 
+            
+        </ion-card-content>
+      </ion-card> 
+    </ion-item>
+  </ion-list>
+</ion-grid>
+
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Doplňovač zásob :D</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>  
+<ion-grid>
+</ion-grid>
+<ion-card>    
+	<h1>{{item.title}}</h1>
+	<img src="{{item.image}}">
+	<div [innerHTML]="item.html"></div>
+<div class="sumarry">  
+     Stisknutím tlačítka "ODESLAT OBJEDNÁVKU" souhlasíte s <a href="#" (click)="showCondition();">Obchodními a přepravními podmínkami</a>.
+</div> 
+</ion-card>  
+<ion-grid>
+  <ion-row>
+    <button padding ion-button full (click)="sendOrder()">ODESLAT OBJEDNÁVKU</button>  
+  </ion-row> 
+</ion-grid>
+</ion-content>

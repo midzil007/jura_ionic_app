@@ -1,0 +1,25 @@
+<!--
+  Generated template for the InstactionsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Návody</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>      
+   <ion-list *ngFor="let row of listVideos">
+ <iframe width="100%"
+            height="315"    
+            [src]="row.url ? row.url : null"
+            (load)="trustedVideoUrl ? handleIFrameLoadEvent() : null"
+            frameborder="0"
+            allowfullscreen></iframe>
+       
+    <h2></h2>          
+</ion-list>
+</ion-content>
+ 

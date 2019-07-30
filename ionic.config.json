@@ -1,6 +1,8 @@
 {
   "name": "jura",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular",
   "id": "e2e63ea1"
 }

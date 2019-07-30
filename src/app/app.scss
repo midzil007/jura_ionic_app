@@ -14,3 +14,105 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+.button{
+	background-color:#666d7b;
+    color: #fff;
+    font-weight: 700;
+}  
+ion-content{
+	background-color:rgba(230, 231, 234, 0.74) !important
+}
+.no-padding{
+	padding:0!important;
+}
+.no-padding img{
+	margin:0!important;
+}
+.tabs .tabbar{
+	background: #666d7b;
+}
+.tabs .tab-button[aria-selected=true]{
+	color: #fff;
+	border-bottom-color: #e30515;
+}
+
+.tabs .tab-button .tab-button-icon,.tabs .tab-button[aria-selected=true] .tab-button-icon {
+	color:#fff;
+	
+}
+.tabs .tab-button-text{
+	
+	font-size: 1.1em;
+	color:#fff;
+}
+
+.wh-bg{
+	background-color: #FFF;
+}
+.wh-gry{
+	background-color: #464646
+}
+.f-red{
+	color: #ce000c;
+}
+.f-gry{
+	color: #464646
+}
+.wh-red{
+	background-color: #ce000c;
+} 
+.f-wh{
+	color: #FFF;
+}
+.f-b{
+	font-weight: 700;
+}
+.t-l{
+	text-align: left;
+}
+.ion-card-header-basket{
+	width: 30%;
+}
+.item-basket{
+	padding-left: 10px!important;
+	webkit-flex-basis: 1!important;
+    -ms-flex-preferred-size: 1!important;
+    flex-basis: 1!important;
+}
+.my-avatar, .my-avatar img{
+	float: left;  
+	min-height: 45px;
+	min-width: 45px;
+}
+.full{width: 100%;
+}  
+.basket-card{
+	margin: 0;
+}
+.basket-car-c{
+	padding: 0 0 0 50px;
+	h4{
+		margin-top: 0;
+		font-weight: 700;
+	}
+	p{
+		margin-top: 16px!important;
+		color: #ce000c;
+	}
+	span.count{
+		float: left;
+		display: inline-block;
+		    margin: 1.1em 7px;
+	}
+}
+.button-view {
+	float: left;
+    padding: 11px;
+    border: 1px solid #666d7b;
+    background-color: #FFF;
+    color: #666d7b;
+    height: 1.8em;
+    margin: 10px 0 0 0!important;
+}

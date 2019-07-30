@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Mé kávovary</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>  
+<ion-grid>
+  <ion-list>
+    <ion-item class="item-basket" *ngFor="let item of listProducts">
+          <h4>{{item.title}}</h4>          
+        <ion-label>{{item.title}}</ion-label>
+          <ion-checkbox [(ngModel)]="item.selected" color="Royal"></ion-checkbox>
+
+    </ion-item>     
+  </ion-list> 
+</ion-grid>
+ <button ion-button full (click)="saveOptions()">ULOŽIT</button>
+</ion-content>
