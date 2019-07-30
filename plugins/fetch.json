@@ -1,0 +1,10 @@
+{
+  "cordova-plugin-youtube-video-player": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-youtube-video-player@2.3.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
