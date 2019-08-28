@@ -65,12 +65,13 @@ export class CustomerPropertiesPage {
             }   
            
             i++; 
-       }
+       }  
        return list;
   }
 
   saveOptions()
-  {     
+  {   
+  // pridat krok  
     this.ids = '';
     for (let item of this.listProducts)
     {
@@ -81,7 +82,8 @@ export class CustomerPropertiesPage {
     } 
     this.ids = this.listArray.join(';');
     this.data.saveOptions(this.ids, "machines");
-    this.navCtrl.push(CustomerPage);   
+    this.data.saveOptions('4','navigate');
+    this.navCtrl.push(BasketPage);      
           
   }
 }

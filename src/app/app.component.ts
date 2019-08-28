@@ -19,6 +19,7 @@ export class MyApp {
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, public data: DataProvider) { 
       this.data.getOptions('navigate').then((navigate) => {
+        console.log(navigate);
        if(navigate){ 
            switch (navigate) {
              case "1":

@@ -18,9 +18,11 @@ import { CustomerDeliveryPage } from '../pages/customer-delivery/customer-delive
 import { CustomerPropertiesPage } from '../pages/customer-properties/customer-properties';
 import { LoginPage } from '../pages/login/login';
 import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';  
+import { SplashScreen } from '@ionic-native/splash-screen';    
 import { DataProvider } from '../providers/data/data';
 import { IonicStorageModule } from '@ionic/storage';
+import { EshopHeaderComponent } from '../components/eshop-header/eshop-header';
+
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { IonicStorageModule } from '@ionic/storage';
     CustomerDataPage,
     CustomerDeliveryPage,
     CustomerPropertiesPage,
+    EshopHeaderComponent, 
     OrdersPage,
     BasketPage,
     DetailPage,
